@@ -15,6 +15,8 @@ find_library(IOKIT_LIBRARY IOKit)
 
 add_executable(main main.cpp ${IMGUI_SRC} ${IMGUI_BACKEND_SRC})
 
+add_subdirectory(glfw)
+
 target_link_directories(main PRIVATE /usr/local/lib)
 target_include_directories(main PRIVATE /usr/local/include)
 
